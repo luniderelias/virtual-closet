@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="camera_size">50dp</dimen>
+    <dimen name="button_size_horizontal">200dp</dimen>
+    <dimen name="button_margin_vertical">30dp</dimen>
+</resources>

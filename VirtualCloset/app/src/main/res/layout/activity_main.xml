@@ -6,4 +6,34 @@
     android:layout_height="match_parent"
     tools:context="thinkapps.com.virtualcloset.View.Home.MainActivity">
 
+    <Button
+        android:id="@+id/buttonAvailablePieces"
+        android:layout_width="@dimen/button_size_horizontal"
+        android:layout_height="wrap_content"
+        android:text="@string/available_pieces"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="@dimen/button_margin_vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMyLooks" />
+
+    <Button
+        android:id="@+id/buttonMyLooks"
+        android:layout_width="@dimen/button_size_horizontal"
+        android:layout_height="wrap_content"
+        android:text="@string/my_looks"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/buttonCamera"
+        android:layout_width="@dimen/camera_size"
+        android:layout_height="@dimen/camera_size"
+        app:srcCompat="@drawable/camera"
+        android:background="@drawable/round_background"
+        android:layout_marginTop="@dimen/button_margin_vertical"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMyLooks" />
 </android.support.constraint.ConstraintLayout>

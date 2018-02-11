@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">VirtualCloset</string>
-
+    <string name="app_name">Virtual Closet</string>
+    <string name="home">Home</string>
+    <string name="available_pieces">Available Pieces</string>
+    <string name="my_looks">My Looks</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
