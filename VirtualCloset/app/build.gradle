@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-
+def AAVersion = '4.4.0'
 android {
     compileSdkVersion 25
     buildToolsVersion "26.0.1"
@@ -10,6 +10,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         release {
@@ -24,6 +25,12 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+    compile 'com.android.support:support-vector-drawable:25.3.1'
+    annotationProcessor "org.androidannotations:androidannotations:$AAVersion"
+    compile "org.androidannotations:androidannotations-api:$AAVersion"
+    annotationProcessor "org.androidannotations:ormlite:$AAVersion"
+    compile "org.androidannotations:ormlite-api:$AAVersion"
+    compile 'com.j256.ormlite:ormlite-android:5.0'
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support:support-v4:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
