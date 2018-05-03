@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="thinkapps.com.virtualcloset.View.Home.AvailablePiecesFragment">
+
+    <ViewStub
+        android:id="@+id/piecesStubList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inflatedId="@+id/showLayout"
+        android:layout="@layout/pieces_list_view" />
+
+    <ViewStub
+        android:id="@+id/piecesStubGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inflatedId="@+id/showLayout"
+        android:layout="@layout/pieces_grid_view" />
+
+    <Button
+        android:id="@+id/gridOrListButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Lista ou Grid" />
+
+</LinearLayout>
